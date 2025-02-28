@@ -29,9 +29,9 @@ load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = ['socialmedia-phi-three.vercel.app','*']
+ALLOWED_HOSTS = ['*','socialmedia-d910.onrender.com/']
 
-
+CSRF_TRUSTED_ORIGINS =['https://socialmedia-d910.onrender.com/']
 # Application definition
 
 INSTALLED_APPS = [
